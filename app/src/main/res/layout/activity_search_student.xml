@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchStudent">
+
+    <TextView
+        android:id="@+id/appBanner"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#C6CDEF"
+        android:text="Search Student"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    app:layout_constraintTop_toBottomOf="@+id/appBanner">
+
+
+    <EditText
+        android:id="@+id/idEdtWaitingId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter Waiting list Id" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/idBtnSearchStudent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="Search Student"
+            android:textAllCaps="false" />
+        <Button
+            android:id="@+id/idBtnHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Home"
+            android:textAllCaps="false"
+            android:onClick="HomeFn"/>
+    </LinearLayout>
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

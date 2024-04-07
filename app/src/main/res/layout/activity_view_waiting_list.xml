@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ViewWaitingList"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/appBanner"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="#C6CDEF"
+            android:text="Course Waiting List"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:textStyle="italic"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/HomeButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="HomeFn"
+            android:text="Home" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/idRVWaitingList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/HomeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="HomeFn"
+            android:text="Home" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+</LinearLayout>
